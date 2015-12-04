@@ -1,0 +1,32 @@
+
+/* 
+    Created on : 04-Dec-2015, 20:43:42
+    Author     : stephen
+*/
+
+@mixin linear-gradient($lGradient, $lGradient2, $lGradient3) {
+    -webkit-linear-gradient: $lGradient, $lGradient2, $lGradient3;
+        -moz-linear-gradient: $lGradient, $lGradient2, $lGradient3;
+            -ms-linear-gradient: $lGradient, $lGradient2, $lGradient3;
+                linear-gradient: $lGradient, $lGradient2, $lGradient3;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+        -khtml-border-radius: $radius;
+            -moz-border-radius: $radius;
+                border-radius: $radius;
+}
+
+@mixin box-shadow($bShadow1, $bShadow2, $bShadow3, $bShadow4) {
+    -webkit-box-shadow: $bShadow1, $bShadow2, $bShadow3, $bShadow4;
+        -moz-box-shadow: $bShadow1, $bShadow2, $bShadow3, $bShadow4;
+            box-shadow: $bShadow1, $bShadow2, $bShadow3, $bShadow4;
+}
+
+@mixin button-hover($bHover1, $bHover2, $bHover3) {
+    -webkit-button-hover: $bHover1, $bHover2, $bHover3;
+        -moz-button-hover: $bHover1, $bHover2, $bHover3;
+            -ms-button-hover: $bHover1, $bHover2, $bHover3;
+                button-hover: $bHover1, $bHover2, $bHover3;
+}

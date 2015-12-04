@@ -1,0 +1,79 @@
+
+/* 
+    Created on : 04-Dec-2015, 20:18:20
+    Author     : stephen
+*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px;
+}
+
+.header {
+    background: #fff;
+    width: 100%;
+    height: 4.75em;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    border-bottom: 0.25em solid #4c9cf1;
+}
+
+#logo {
+    
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 2px;
+    margin-bottom: 7px;
+    /*background-color: #33b5e5;*/
+    color: #0094ff;
+    text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+    .menu li:hover {
+        background_color: rgba(0,0,0,0.12);
+    }
+
+.container {
+    width: 80%;
+    max-width: 70%;
+    position: relative;
+    left: 15%;
+}
+
+.box {
+    padding: 1.5625em;
+    background-color: lightgray;
+    border-radius: 0.9375em;
+    float: none;
+}
+
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    background: #ccc;
+}

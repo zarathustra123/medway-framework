@@ -1,0 +1,485 @@
+/* 
+    Created on : 04-Dec-2015, 21:34:00
+    Author     : stephen
+*/
+/* 
+    Created on : 04-Dec-2015, 21:34:33
+    Author     : stephen
+*/
+/* 
+    Created on : 04-Dec-2015, 20:43:42
+    Author     : stephen
+*/
+/* 
+    Created on : 04-Dec-2015, 20:15:22
+    Author     : stephen
+*/
+/* line 6, ../sass/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/_reset.scss */
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 16, ../sass/_reset.scss */
+[class*="col-"] {
+  float: left;
+  padding: 0.9375em;
+  border: 0.9375em;
+}
+
+/* 
+    Created on : 04-Dec-2015, 20:18:20
+    Author     : stephen
+*/
+/* line 7, ../sass/_base.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 12, ../sass/_base.scss */
+body {
+  margin: 0 0 100px;
+}
+
+/* line 16, ../sass/_base.scss */
+.header {
+  background: #fff;
+  width: 100%;
+  height: 4.75em;
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  border-bottom: 0.25em solid #4c9cf1;
+}
+
+/* line 30, ../sass/_base.scss */
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 36, ../sass/_base.scss */
+.menu li {
+  padding: 2px;
+  margin-bottom: 7px;
+  /*background-color: #33b5e5;*/
+  color: #0094ff;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 45, ../sass/_base.scss */
+.menu li:hover {
+  background_color: rgba(0, 0, 0, 0.12);
+}
+
+/* line 49, ../sass/_base.scss */
+.container {
+  width: 80%;
+  max-width: 70%;
+  position: relative;
+  left: 15%;
+}
+
+/* line 56, ../sass/_base.scss */
+.box {
+  padding: 1.5625em;
+  background-color: lightgray;
+  border-radius: 0.9375em;
+  float: none;
+}
+
+/* line 63, ../sass/_base.scss */
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 71, ../sass/_base.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  background: #ccc;
+}
+
+/* 
+    Created on : 04-Dec-2015, 20:06:51
+    Author     : stephen
+*/
+/***Responsive Layour***/
+/**For Mobile Phones**/
+/* line 8, ../sass/_grid.scss */
+[class*='col-'] {
+  width: 100%;
+}
+
+/**For Tablet Devices**/
+@media only screen and (min-width: 37.5em) {
+  /* line 14, ../sass/_grid.scss */
+  .col-m-1 {
+    width: 8.33%;
+  }
+
+  /* line 15, ../sass/_grid.scss */
+  .col-m-2 {
+    width: 16.66%;
+  }
+
+  /* line 16, ../sass/_grid.scss */
+  .col-m-3 {
+    width: 25%;
+  }
+
+  /* line 17, ../sass/_grid.scss */
+  .col-m-4 {
+    width: 33.33%;
+  }
+
+  /* line 18, ../sass/_grid.scss */
+  .col-m-5 {
+    width: 41.66%;
+  }
+
+  /* line 19, ../sass/_grid.scss */
+  .col-m-6 {
+    width: 50%;
+  }
+
+  /* line 20, ../sass/_grid.scss */
+  .col-m-7 {
+    width: 58.33%;
+  }
+
+  /* line 21, ../sass/_grid.scss */
+  .col-m-8 {
+    width: 66.66%;
+  }
+
+  /* line 22, ../sass/_grid.scss */
+  .col-m-9 {
+    width: 75%;
+  }
+
+  /* line 23, ../sass/_grid.scss */
+  .col-m-10 {
+    width: 83.33%;
+  }
+
+  /* line 24, ../sass/_grid.scss */
+  .col-m-11 {
+    width: 91.66%;
+  }
+
+  /* line 25, ../sass/_grid.scss */
+  .col-m-12 {
+    width: 100%;
+  }
+}
+/**For Desktop**/
+@media only screen and (min-width: 38em) {
+  /* line 30, ../sass/_grid.scss */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  /* line 31, ../sass/_grid.scss */
+  .col-2 {
+    width: 16.66%;
+  }
+
+  /* line 32, ../sass/_grid.scss */
+  .col-3 {
+    width: 25%;
+  }
+
+  /* line 33, ../sass/_grid.scss */
+  .col-4 {
+    width: 33.33%;
+  }
+
+  /* line 34, ../sass/_grid.scss */
+  .col-5 {
+    width: 41.66%;
+  }
+
+  /* line 35, ../sass/_grid.scss */
+  .col-6 {
+    width: 50%;
+  }
+
+  /* line 36, ../sass/_grid.scss */
+  .col-7 {
+    width: 58.33%;
+  }
+
+  /* line 37, ../sass/_grid.scss */
+  .col-8 {
+    width: 66.66%;
+  }
+
+  /* line 38, ../sass/_grid.scss */
+  .col-9 {
+    width: 75%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .col-10 {
+    width: 83.33%;
+  }
+
+  /* line 40, ../sass/_grid.scss */
+  .col-11 {
+    width: 91.66%;
+  }
+
+  /* line 41, ../sass/_grid.scss */
+  .col-12 {
+    width: 100%;
+  }
+}
+/* 
+    Created on : 04-Dec-2015, 20:53:44
+    Author     : stephen
+*/
+/* line 7, ../sass/_typography.scss */
+.left {
+  float: left;
+  text-align: left;
+}
+
+/* line 12, ../sass/_typography.scss */
+.right {
+  float: right;
+  text-align: right;
+}
+
+/* line 17, ../sass/_typography.scss */
+.center {
+  text-align: center;
+}
+
+/* line 21, ../sass/_typography.scss */
+.break-word {
+  word-wrap: break-word;
+}
+
+/* line 25, ../sass/_typography.scss */
+.body {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 100%;
+}
+
+/* line 30, ../sass/_typography.scss */
+.body, caption, th, td, input, textarea, select, option, legend, fieldset, h1,
+h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+/* line 35, ../sass/_typography.scss */
+#page {
+  font-size: 1em;
+  /*equivalent to 16px*/
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
+@media (min-width: 43.75em) {
+  /* line 43, ../sass/_typography.scss */
+  #page {
+    font-size: 1em;
+    /*equivalent to 16px*/
+    line-height: 1.375;
+    /*equivalent to 22px*/
+  }
+}
+/* line 51, ../sass/_typography.scss */
+.h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
+@media (min-width: 43.75em) {
+  /* line 59, ../sass/_typography.scss */
+  h1 {
+    font-size: 2.5em;
+    /* 2.5px body copy size + 40px */
+    line-height: 1.125;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 67, ../sass/_typography.scss */
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate
+        for display headings */
+  }
+}
+/* line 76, ../sass/_typography.scss */
+.h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.153846165;
+  /* 30px / 26px */
+}
+
+@media (min-width: 43.75em) {
+  /* line 84, ../sass/_typography.scss */
+  h2 {
+    font-size: 2em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 92, ../sass/_typography.scss */
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
+}
+/* line 99, ../sass/_typography.scss */
+.h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 24px */
+  line-height: 1.13636364;
+  /* 25px / 22px */
+}
+
+@media (min-width: 43.75em) {
+  /* line 107, ../sass/_typography.scss */
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 115, ../sass/_typography.scss */
+  h3 {
+    font-size: 1.75em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+/* line 122, ../sass/_typography.scss */
+.h4 {
+  font-size: 1.125em;
+  /* 1.75x body copy size = 28px */
+  line-height: 1.111111111;
+}
+
+@media (min-width: 43.75em) {
+  /* line 129, ../sass/_typography.scss */
+  h4 {
+    line-height: 1.22222222;
+    /* 22px / 18px */
+  }
+}
+/* line 135, ../sass/_typography.scss */
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+}
+
+@media (min-width: 43.75em) {
+  /* line 143, ../sass/_typography.scss */
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px */
+    line-height: 1.45833333;
+    /* 35px / 24px */
+  }
+}
+/* line 151, ../sass/_typography.scss */
+a:link {
+  color: #0094ff;
+}
+
+/* line 155, ../sass/_typography.scss */
+a:visited {
+  color: #0026ff;
+}
+
+/* line 159, ../sass/_typography.scss */
+a:hover {
+  color: #0ff;
+}
+
+/* line 163, ../sass/_typography.scss */
+a:active {
+  color: #b200ff;
+}
+
+/* line 167, ../sass/_typography.scss */
+.txt-primary {
+  color: lightblue;
+}
+
+/* line 171, ../sass/_typography.scss */
+.txt-success {
+  color: lightgreen;
+}
+
+/* line 175, ../sass/_typography.scss */
+.txt-warning {
+  color: #f79956;
+}
+
+/* line 179, ../sass/_typography.scss */
+.txt-error {
+  color: #f84949;
+}
+
+/* line 183, ../sass/_typography.scss */
+.txt-inactive {
+  color: lightgrey;
+}
+
+/* line 187, ../sass/_typography.scss */
+.para-primary {
+  color: lightblue;
+}
+
+/* line 191, ../sass/_typography.scss */
+.para-success {
+  background: lightgreen;
+}
+
+/* line 195, ../sass/_typography.scss */
+.para-warning {
+  background: #f79956;
+}
+
+/* line 199, ../sass/_typography.scss */
+.para-error {
+  background: #f84949;
+}
+
+/* line 203, ../sass/_typography.scss */
+.para-inactive {
+  background: lightgrey;
+}
+
+/**/
